@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- Put everything under a container -->
+    <div id="container">
+
+        <header id="header">
+            <h1 id="title">This is Survey Form Exercise</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform </p>
+        </header>
+
+
+        <form id="survey-form" action="">
+            <!-- Why every element is put under "form-group" div ? -->
+            <div class="form-group">
+                <label id="name-label" for="name" required>Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Enter email</label>
+                <input type="email" name="email" id="email" placeholder="Your email" required><br>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Enter number</label>
+                <input type="number" name="age" id="number" placeholder="1" min="1" max="5"><br>
+            </div>
+
+            <!--drop down -->
+            <div class="form-group">
+                <label for="dropdown">Choose a car:</label>
+                <select id="dropdown"><br><br>
+                    <option value="Model Y">Model Y</option>
+                    <option value="Model 3">Model 3</option>
+                    <option value="Model X">Model X</option>
+                    <option value="Roadster">Roadster</option>
+                </select>
+            </div>
+
+            <!-- radio button -->
+            <div class="form-group">
+                <label for="Model1"><input type="radio" class="Model-radio" name="name" value="Model 3">LR</label>
+                <label for="Model2"><input type="radio" class="Model-radio" name="name" value="Model Y">AWD</label>
+                <label for="Model3"><input type="radio" class="Model-radio" name="name" value="Model X">RWD</label>
+            </div>
+
+            <!-- checkbox-->
+            <div class="form-group check-box">
+                <label for="vehicle1">Small SUV</label>
+                <input type="checkbox" id="vehicle1" name="vehicle-checkbox" value="Model Y">
+                <label for="vehicle2">Small Sedan</label>
+                <input type="checkbox" id="vehicle2" name="vehicle-checkbox" value="Model 3">
+                <label for="vehicle3">Large SUV</label>
+                <input type="checkbox" id="vehicle3" name="vehicle-checkbox" value="Model X">
+            </div>
+
+            <!-- textarea-->
+            <div class="form-group">
+                <label for="textAreaId">Any Comments or Suggestions ?</label><br>
+                <textarea name="textAreaName" id="textAreaId" placeholder="Enter your comments here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" value="submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
