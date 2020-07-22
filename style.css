@@ -13,3 +13,20 @@
   font-size: 1em;
   text-align: center;
 }
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  /* display: block; */
+  border: 1px solid blue;
+}
+
+#submit {
+  width: 40%;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  /* display: block; */
+}
