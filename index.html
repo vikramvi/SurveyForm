@@ -9,52 +9,73 @@
 </head>
 
 <body>
+    <div class="container">
 
+        <header class="header">
 
-    <h1 id="title">This is Survey Form Exercise</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform </p>
+            <h1 id="title">This is Survey Form Exercise</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform </p>
+        </header>
 
-    <div class="main">
-        <form id="survey-form" action="">
-            <label id="name-label" for="name" required>Name</label><br>
-            <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name" required>Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
 
-            <label id="email-label" for="email">Enter email</label><br>
-            <input type="email" name="email" id="email" placeholder="Your email" required><br>
+            <div class="form-group">
+                <label id="email-label" for="email">Enter email</label>
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
 
-            <label id="number-label" for="number">Enter number</label><br>
-            <input type="number" name="age" id="number" placeholder="1" min="1" max="5"><br>
+            <div class="form-group">
+                <label id="number-label" for="number">Enter number</label>
+                <input type="number" name="age" id="number" placeholder="1" min="1" max="5">
+            </div>
 
             <!--drop down -->
-            <label for="dropdown">Choose a car:</label>
-            <select id="dropdown">
-                <option value="Model Y">Model Y</option>
-                <option value="Model 3">Model 3</option>
-                <option value="Model X">Model X</option>
-                <option value="Roadster">Roadster</option>
-            </select><br>
+            <div class="form-group">
+                <p>Choose a car:</p>
+                <select id="dropdown" name="member" class="form-input" required>
+                    <option value="Model Y">Model Y</option>
+                    <option value="Model 3">Model 3</option>
+                    <option value="Model X">Model X</option>
+                    <option value="Roadster">Roadster</option>
+                </select>
+            </div>
 
             <!-- radio button -->
-            <label for="Model1">LR</label>
-            <input type="radio" class="Model-radio" name="name" value="Model 3"><br>
-            <label for="Model2">AWD</label>
-            <input type="radio" class="Model-radio" name="name" value="Model Y"><br>
-            <label for="Model3">RWD</label>
-            <input type="radio" class="Model-radio" name="name" value="Model X"><br>
+            <div class="form-group">
+                <p>Which Car You'll Choose</p>
+                <label><input name="food-service" value="fantastic" type="radio" class="input-radio"
+                        checked />LR</label>
+                <label><input name="food-service" value="good" type="radio" class="input-radio" />AWD</label>
+                <label><input name="food-service" value="average" type="radio" class="input-radio" />Performance</label>
+            </div>
 
             <!-- checkbox-->
-            <input type="checkbox" id="vehicle1" name="vehicle-checkbox" value="Model Y"><br>
-            <label for="vehicle1">Small SUV</label>
-            <input type="checkbox" id="vehicle2" name="vehicle-checkbox" value="Model 3"><br>
-            <label for="vehicle2">Small Sedan</label>
-            <input type="checkbox" id="vehicle3" name="vehicle-checkbox" value="Model X"><br>
-            <label for="vehicle3">Large SUV</label>
+            <div class="form-group">
+                <input type="checkbox" class="input-checkbox" name="vehicle-checkbox" value="Model Y">Small SUV<br>
+                <input type="checkbox" class="input-checkbox" name="vehicle-checkbox" value="Model 3">Small Sedan<br>
+                <input type="checkbox" class="input-checkbox" name="vehicle-checkbox" value="Model X" checked>Large
+                SUV<br>
+            </div>
 
-            <!-- textarea-->
-            <label for="textAreaId">Any Comments or Suggestions ?</label><br>
-            <textarea name="textAreaName" id="textAreaId" placeholder="Enter your comments here..."></textarea>
+            <!-- Comment box -->
+            <div class="form-group">
+                <p>
+                    Opinions or suggestions for our service:
+                </p>
+                <textarea name="suggestion" id="suggestions" class="textarea-input"
+                    placeholder="Enter your opinions or suggestions here"></textarea>
+            </div>
 
-            <button id="submit">Submit</button>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="button-style">
+                    Submit
+                </button>
+            </div>
 
         </form>
     </div>
